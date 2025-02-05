@@ -1,5 +1,12 @@
-import Navbar from "components/Navbar";
+import Navbar from "../components/Navbar";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const raleway = localFont({
+  src: "../../public/fonts/raleway/Raleway-Regular.ttf",
+  display: "block",
+  variable: "--font-raleway",
+});
 
 export default function RootLayout({
   children,
@@ -7,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id">
-      <body>
+    <html lang="id" className={raleway.variable}>
+      <body className="font-raleway">
         <header className="">
           <Navbar />
         </header>
