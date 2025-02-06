@@ -6,15 +6,31 @@ export default function Navbar() {
   return (
     <>
       <nav className="grid w-full gap-1.5 items-center ">
-        <div className="relative">
-          <div className="absolute left-2.5 top-2.5 h-4 w-4 ">
-            <Search className={"h-4 w-4"} />
-          </div>
+        <div className="flex relative">
+          <span className="relative top-10 left-64 text-4xl tracking-wider ">
+            <Link href={"/"}>Blanjaa</Link>
+          </span>
           <Input
-            className="relative w-1/2 m-auto border-primary top-9 cursor-pointer"
+            startIcon={Search}
             placeholder="Mau cari apa hari ini?"
             type="search"
           />
+          <div className=" flex gap-5 relative top-10 right-20 justify-between ">
+            <Link
+              href={"/signup"}
+              className="border mx-3 border-hitamSoft px-3 py-2 rounded-xl"
+            >
+              Sign Up
+            </Link>
+
+            <Link
+              href={"/login"}
+              className="border border-white text-white bg-hitamSoft px-5 py-2
+              rounded-xl"
+            >
+              Log In
+            </Link>
+          </div>
         </div>
 
         <ul className="flex flex-row justify-center gap-5 border-b-2 pt-10 pb-5">
@@ -23,11 +39,6 @@ export default function Navbar() {
           </li>
           <li>
             <Link href={"/about"}>About</Link>
-          </li>
-          <li>
-            <Link href={"/signup"} className="bg-biru text-white">
-              Sign Up/Login
-            </Link>
           </li>
         </ul>
       </nav>

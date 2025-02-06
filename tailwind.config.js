@@ -15,6 +15,8 @@ module.exports = {
         raleway: ["var(--font-raleway)", "sans-serif"],
       },
       colors: {
+        biru: "#98d8ef",
+        hitamSoft: "#232b2b",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

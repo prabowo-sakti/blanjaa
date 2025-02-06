@@ -1,11 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "tailwindcss";
-
-@theme {
-  --color-biru: #98d8ef;
-}
 
 @layer base {
   :root {
